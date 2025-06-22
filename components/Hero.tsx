@@ -201,20 +201,52 @@ export default function Hero() {
                   color: "hover:text-red-500",
                   target: "",
                 },
-              ].map(({ icon: Icon, href, label, color, target }) => (
-                <motion.a
-                  key={label}
-                  href={href}
-                  target={target}
-                  className={`group relative p-4 glass-card text-gray-700 dark:text-gray-300 ${color} transition-all duration-300 magnetic`}
-                  whileHover={{ scale: 1.1, y: -5, rotate: 5 }}
-                  whileTap={{ scale: 0.9 }}
-                  aria-label={label}
-                >
-                  <Icon size={24} />
-                  <div className="absolute -inset-2 bg-gradient-to-r from-primary-500 to-purple-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur" />
-                </motion.a>
-              ))}
+                {
+                  iconSrc: "/icons/dev-to.svg",
+                  href: "https://dev.to/tusharjagi",
+                  color: "hover:text-grey-500",
+                  label: "Dev.to",
+                  target: "_blank",
+                },
+                {
+                  iconSrc: "/icons/hashnode.svg",
+                  href: "https://hashnode.com/@Tusharjagi",
+                  label: "Hashnode",
+                  color: "hover:text-blue-500",
+                  target: "_blank",
+                },
+                {
+                  iconSrc: "/icons/medium.svg",
+                  href: "https://medium.com/@tusharjagi",
+                  color: "hover:text-grey-500",
+                  label: "Medium",
+                  target: "_blank",
+                },
+              ].map(
+                ({ icon: Icon = "", href, label, color, target, iconSrc }) => (
+                  <motion.a
+                    key={label}
+                    href={href}
+                    target={target}
+                    className={`group relative p-4 glass-card text-gray-700 dark:text-gray-300 ${color} transition-all duration-300 magnetic`}
+                    whileHover={{ scale: 1.1, y: -5, rotate: 5 }}
+                    whileTap={{ scale: 0.9 }}
+                    aria-label={label}
+                  >
+                    {iconSrc ? (
+                      <img
+                        src={iconSrc}
+                        width="24px"
+                        height="24px"
+                        alt={`${label}-icon`}
+                      />
+                    ) : (
+                      <Icon size={20} />
+                    )}
+                    <div className="absolute -inset-2 bg-gradient-to-r from-primary-500 to-purple-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur" />
+                  </motion.a>
+                )
+              )}
             </motion.div>
 
             {/* Stats Section */}

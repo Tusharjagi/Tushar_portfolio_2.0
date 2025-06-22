@@ -1,13 +1,45 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart, Twitter } from "lucide-react";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "#contact", label: "Email" },
+    {
+      icon: Github,
+      href: "https://github.com/Tusharjagi",
+      label: "GitHub",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/tushar-jagi-519025215/",
+      label: "LinkedIn",
+    },
+    {
+      icon: Twitter,
+      href: "https://x.com/tusharjagi",
+      label: "Twitter",
+    },
+    {
+      icon: Mail,
+      href: "#contact",
+      label: "Email",
+    },
+    {
+      iconSrc: "/icons/dev-to.svg",
+      href: "https://dev.to/tusharjagi",
+      label: "Dev.to",
+    },
+    {
+      iconSrc: "/icons/hashnode.svg",
+      href: "https://hashnode.com/@Tusharjagi",
+      label: "Hashnode",
+    },
+    {
+      iconSrc: "/icons/medium.svg",
+      href: "https://medium.com/@tusharjagi",
+      label: "Medium",
+    },
   ];
 
   return (
@@ -52,8 +84,8 @@ export default function Footer() {
 
           <div>
             <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
-            <div className="flex space-x-4">
-              {socialLinks.map(({ icon: Icon, href, label }) => (
+            <div className="flex flex-wrap gap-4 justify-center items-center">
+              {socialLinks.map(({ icon: Icon = "", href, label, iconSrc }) => (
                 <motion.a
                   key={label}
                   href={href}
@@ -62,7 +94,16 @@ export default function Footer() {
                   whileTap={{ scale: 0.9 }}
                   aria-label={label}
                 >
-                  <Icon size={20} />
+                  {iconSrc ? (
+                    <img
+                      src={iconSrc}
+                      width="24px"
+                      height="24px"
+                      alt={`${label}-icon`}
+                    />
+                  ) : (
+                    <Icon size={20} />
+                  )}
                 </motion.a>
               ))}
             </div>
