@@ -20,15 +20,43 @@ export default function Skills() {
         {
           name: "React/Next.js",
           level: 95,
-          color: "from-blue-500 to-cyan-500",
+          color: "from-sky-500 to-blue-600",
         },
-        { name: "TypeScript", level: 90, color: "from-blue-600 to-blue-400" },
         {
           name: "Tailwind CSS",
           level: 95,
-          color: "from-teal-500 to-green-500",
+          color: "from-teal-400 to-cyan-500",
         },
-        { name: "Vue.js", level: 85, color: "from-green-500 to-emerald-500" },
+        {
+          name: "React Native",
+          level: 74,
+          color: "from-sky-500 to-indigo-500",
+        },
+        {
+          name: "TypeScript",
+          level: 70,
+          color: "from-blue-600 to-sky-400",
+        },
+        {
+          name: "Angular",
+          level: 68,
+          color: "from-red-500 to-orange-500",
+        },
+        {
+          name: "Flutter",
+          level: 42,
+          color: "from-blue-400 to-cyan-600",
+        },
+        {
+          name: "Vue.js",
+          level: 24,
+          color: "from-emerald-400 to-green-500",
+        },
+        {
+          name: "jQuery",
+          level: 24,
+          color: "from-blue-600 to-blue-800",
+        },
       ],
     },
     {
@@ -38,46 +66,188 @@ export default function Skills() {
         {
           name: "Node.js/Express",
           level: 90,
-          color: "from-green-600 to-green-400",
+          color: "from-lime-600 to-green-500",
+        },
+        {
+          name: "MongoDB",
+          level: 65,
+          color: "from-emerald-600 to-green-500",
         },
         {
           name: "Python/Django",
-          level: 85,
-          color: "from-yellow-500 to-orange-500",
+          level: 42,
+          color: "from-gray-700 to-green-600",
         },
-        { name: "PostgreSQL", level: 88, color: "from-blue-600 to-indigo-600" },
-        { name: "MongoDB", level: 82, color: "from-green-500 to-teal-500" },
+        {
+          name: "PostgreSQL",
+          level: 36,
+          color: "from-sky-700 to-blue-800",
+        },
       ],
     },
     {
-      title: "Tools & Cloud",
+      title: "Tools & Platforms",
       icon: "☁️",
       skills: [
-        { name: "Git/GitHub", level: 92, color: "from-gray-700 to-gray-500" },
-        { name: "Docker", level: 78, color: "from-blue-500 to-blue-600" },
+        {
+          name: "Git/GitHub",
+          level: 96,
+          color: "from-gray-800 to-gray-500",
+        },
+        {
+          name: "Figma",
+          level: 94,
+          color: "from-pink-400 to-purple-500",
+        },
+        {
+          name: "Linux/Unix",
+          level: 86,
+          color: "from-gray-700 to-black",
+        },
+        {
+          name: "Redux Toolkit",
+          level: 82,
+          color: "from-purple-600 to-purple-800",
+        },
+        {
+          name: "Jira",
+          level: 78,
+          color: "from-indigo-600 to-blue-500",
+        },
         {
           name: "AWS/Cloud",
-          level: 80,
-          color: "from-orange-500 to-yellow-500",
+          level: 66,
+          color: "from-orange-400 to-yellow-500",
         },
-        { name: "GraphQL", level: 75, color: "from-pink-500 to-purple-500" },
+        {
+          name: "New Relic",
+          level: 64,
+          color: "from-emerald-500 to-cyan-500",
+        },
+        {
+          name: "CleverTap",
+          level: 64,
+          color: "from-rose-500 to-indigo-500",
+        },
+        {
+          name: "Docker",
+          level: 56,
+          color: "from-sky-600 to-blue-700",
+        },
+        {
+          name: "Jenkins",
+          level: 56,
+          color: "from-red-500 to-slate-600",
+        },
+        {
+          name: "Kibana",
+          level: 54,
+          color: "from-pink-600 to-orange-400",
+        },
+        {
+          name: "GraphQL",
+          level: 24,
+          color: "from-pink-500 to-fuchsia-600",
+        },
+      ],
+    },
+    {
+      title: "AI Tools",
+      icon: "🤖",
+      skills: [
+        {
+          name: "ChatGPT",
+          level: 90,
+          color: "from-green-500 to-emerald-500",
+        },
+        {
+          name: "GitHub Copilot",
+          level: 86,
+          color: "from-indigo-500 to-blue-600",
+        },
+        {
+          name: "Cursor IDE",
+          level: 74,
+          color: "from-sky-500 to-blue-700",
+        },
+        {
+          name: "Bolt",
+          level: 72,
+          color: "from-pink-500 to-purple-500",
+        },
       ],
     },
   ];
 
   const additionalSkills = [
-    { name: "React Native", category: "Mobile", color: "bg-blue-500" },
-    { name: "Firebase", category: "Backend", color: "bg-orange-500" },
-    { name: "Redis", category: "Database", color: "bg-red-500" },
-    { name: "Webpack", category: "Tools", color: "bg-blue-600" },
+    {
+      name: "Firebase",
+      category: "Backend as a Service",
+      color: "bg-orange-500",
+    },
+    { name: "Prisma ORM", category: "Database Tool", color: "bg-purple-600" },
+
+    { name: "Webpack", category: "Build Tool", color: "bg-blue-600" },
+    { name: "Vite", category: "Build Tool", color: "bg-purple-500" },
+    { name: "Babel", category: "Build Tool", color: "bg-yellow-500" },
+
     { name: "Jest", category: "Testing", color: "bg-green-600" },
-    { name: "Cypress", category: "Testing", color: "bg-gray-700" },
-    { name: "Figma", category: "Design", color: "bg-purple-500" },
-    { name: "Adobe XD", category: "Design", color: "bg-pink-500" },
+    {
+      name: "React Testing Library",
+      category: "Testing",
+      color: "bg-rose-500",
+    },
+
     { name: "Sass/SCSS", category: "Styling", color: "bg-pink-600" },
-    { name: "Material-UI", category: "UI Library", color: "bg-blue-400" },
+    { name: "Styled Components", category: "Styling", color: "bg-rose-600" },
+    { name: "Framer Motion", category: "Styling", color: "bg-blue-400" },
+
+    { name: "Material-UI", category: "UI Framework", color: "bg-blue-400" },
+    { name: "Shadcn/UI", category: "UI Framework", color: "bg-violet-500" },
+    { name: "Chakra UI", category: "UI Framework", color: "bg-teal-400" },
+    { name: "Bootstrap", category: "UI Framework", color: "bg-indigo-500" },
+
     { name: "REST APIs", category: "API", color: "bg-green-500" },
+    { name: "Postman", category: "API Testing", color: "bg-orange-600" },
+    { name: "Swagger", category: "API", color: "bg-yellow-400" },
+
     { name: "Microservices", category: "Architecture", color: "bg-indigo-500" },
+    { name: "MicroFrontend", category: "Architecture", color: "bg-indigo-400" },
+
+    { name: "CI/CD", category: "DevOps & Deployment", color: "bg-gray-600" },
+    {
+      name: "Docker Compose",
+      category: "DevOps & Deployment",
+      color: "bg-sky-700",
+    },
+    {
+      name: "Netlify",
+      category: "DevOps & Deployment",
+      color: "bg-emerald-500",
+    },
+    { name: "Vercel", category: "DevOps & Deployment", color: "bg-zinc-700" },
+    { name: "Render", category: "DevOps & Deployment", color: "bg-blue-800" },
+
+    {
+      name: "Redux Saga",
+      category: "State Management",
+      color: "bg-purple-700",
+    },
+    {
+      name: "Redux Thunk",
+      category: "State Management",
+      color: "bg-orange-500",
+    },
+    { name: "Zustand", category: "State Management", color: "bg-yellow-500" },
+
+    {
+      name: "Clarity (Microsoft)",
+      category: "Monitoring",
+      color: "bg-blue-500",
+    },
+
+    { name: "Strapi", category: "CMS", color: "bg-indigo-600" },
+    { name: "Markdown", category: "Documentation", color: "bg-gray-500" },
   ];
 
   return (
@@ -244,14 +414,17 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 1 }}
           className="mt-16 text-center"
         >
-          <div className="glass-card p-8 rounded-2xl max-w-2xl mx-auto">
+          <div className="glass-card p-8 rounded-2xl max-w-4xl mx-auto">
             <h4 className="text-xl font-bold mb-4 gradient-text">
               Continuous Learning
             </h4>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              I'm always exploring new technologies and staying up-to-date with
-              the latest trends in web development. Currently learning AI/ML
-              integration and exploring Web3 technologies.
+              I'm a full-stack developer skilled in React, Next.js, Node.js, and
+              Tailwind CSS, with hands-on experience in building scalable web
+              apps. I work across frontend, backend, DevOps, and UI/UX, using
+              tools like Git, Docker, CI/CD, and platforms like Vercel and
+              Render. I also leverage AI tools like ChatGPT, Copilot, and Figma
+              AI to enhance development and design workflows.
             </p>
           </div>
         </motion.div>
