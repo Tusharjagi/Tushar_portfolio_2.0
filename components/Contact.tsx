@@ -53,21 +53,21 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "tushar.jagi@email.com",
-      href: "mailto:tushar.jagi@email.com",
+      value: "tusharjagi@gmail.com",
+      href: "mailto:tusharjagi@gmail.com",
       color: "from-red-500 to-pink-500",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 8285353051",
+      href: "tel:+918285353051",
       color: "from-green-500 to-emerald-500",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "San Francisco, CA",
+      value: "Delhi, india",
       href: "#",
       color: "from-blue-500 to-cyan-500",
     },
@@ -295,7 +295,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-all duration-200"
-                    placeholder="your.email@example.com"
+                    placeholder="youremail@example.com"
                   />
                 </div>
               </div>
