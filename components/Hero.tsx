@@ -162,7 +162,7 @@ export default function Hero() {
               </motion.a>
 
               <motion.a
-                href="/resume.pdf"
+                href="documents/Tushar_Jagi_Resume_2.0.pdf"
                 download
                 className="group relative border-2 border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-600 hover:text-white px-8 py-4 rounded-full font-medium transition-all duration-300 flex items-center"
                 whileHover={{ scale: 1.05, y: -2 }}
@@ -182,26 +182,30 @@ export default function Hero() {
               {[
                 {
                   icon: Github,
-                  href: "#",
+                  href: "https://github.com/Tusharjagi",
                   label: "GitHub",
                   color: "hover:text-gray-800 dark:hover:text-gray-200",
+                  target: "_blank",
                 },
                 {
                   icon: Linkedin,
-                  href: "#",
+                  href: "https://www.linkedin.com/in/tushar-jagi-519025215/",
                   label: "LinkedIn",
                   color: "hover:text-blue-600",
+                  target: "_blank",
                 },
                 {
                   icon: Mail,
                   href: "#contact",
                   label: "Email",
                   color: "hover:text-red-500",
+                  target: "",
                 },
-              ].map(({ icon: Icon, href, label, color }) => (
+              ].map(({ icon: Icon, href, label, color, target }) => (
                 <motion.a
                   key={label}
                   href={href}
+                  target={target}
                   className={`group relative p-4 glass-card text-gray-700 dark:text-gray-300 ${color} transition-all duration-300 magnetic`}
                   whileHover={{ scale: 1.1, y: -5, rotate: 5 }}
                   whileTap={{ scale: 0.9 }}
