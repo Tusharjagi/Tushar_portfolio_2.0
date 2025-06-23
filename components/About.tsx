@@ -83,18 +83,6 @@ export default function About() {
           >
             <div className="space-y-6">
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                My professional journey began with a strong foundation in
-                Computer Science and a relentless curiosity for solving
-                real-world problems with code. I started at{" "}
-                <span className="font-medium text-primary-600 dark:text-primary-400">
-                  Ferns N Petals
-                </span>
-                , where I played a key role in scaling web experiences for
-                millions of users by collaborating across teams and delivering
-                production-ready features using <strong>Next.js</strong>,{" "}
-                <strong>Node.js</strong>, and <strong>AngularJS</strong>.
-              </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                 Currently, I’m working at{" "}
                 <span className="font-medium text-primary-600 dark:text-primary-400">
                   Shiprocket
@@ -107,6 +95,18 @@ export default function About() {
                 and <strong>Tailwind CSS</strong>. My role also involves
                 collaborating closely with design and product teams to deliver
                 impactful solutions in the logistics domain.
+              </p>
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                My professional journey began with a strong foundation in
+                Computer Science and a relentless curiosity for solving
+                real-world problems with code. I started at{" "}
+                <span className="font-medium text-primary-600 dark:text-primary-400">
+                  Ferns N Petals
+                </span>
+                , where I played a key role in scaling web experiences for
+                millions of users by collaborating across teams and delivering
+                production-ready features using <strong>Next.js</strong>,{" "}
+                <strong>Node.js</strong>, and <strong>AngularJS</strong>.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                 Whether it's optimizing performance, enhancing user experience
