@@ -15,88 +15,88 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Case fusion",
       description:
-        "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      image:
-        "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+        "Case Fusion is an E-commerce platform that allows users to design and order their own personalized phone covers.",
+      image: "/images/case_fusion.png",
+      technologies: ["Next.js", "TypeScript", "Prisma", "Framer motion"],
       category: "fullstack",
-      github: "#",
-      demo: "#",
-      featured: true,
-      stats: { stars: 124, views: "2.1k" },
-    },
-    {
-      title: "Task Management App",
-      description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image:
-        "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Prisma",
-        "Socket.io",
-        "Tailwind CSS",
-      ],
-      category: "frontend",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/Tusharjagi/case-fusion",
+      demo: "https://case-fusion.vercel.app/",
       featured: true,
       stats: { stars: 89, views: "1.8k" },
     },
     {
-      title: "Weather Analytics Dashboard",
+      title: "KanBan Dashboard",
       description:
-        "An interactive dashboard displaying weather data with charts, maps, and forecasts. Built with modern data visualization libraries.",
-      image:
-        "https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Vue.js", "D3.js", "Express", "MongoDB", "Chart.js"],
+        "Kanban Dashboard is a task management tool that helps users efficiently organize and track their daily tasks",
+      image: "/images/kanban.png",
+      technologies: ["Next.js", "Redux/toolkit", "Drag and Drop", "tailwind"],
       category: "frontend",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/Tusharjagi/KanBan-Task-Dashboard",
+      demo: "https://kan-ban-task-dashboard.vercel.app/",
       featured: false,
       stats: { stars: 67, views: "1.2k" },
     },
     {
-      title: "Social Media Platform",
+      title: "macOS Finder",
       description:
-        "A modern social media platform with real-time messaging, media sharing, and social features. Includes mobile-responsive design.",
-      image:
-        "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["React Native", "Firebase", "Redux", "WebRTC", "CSS3"],
+        "In macOS Finder, we can drag and drop folders, create new folders, sort them by name, and delete folders.",
+      image: "/images/mac_os.png",
+      technologies: ["React", "MUI", "redux"],
+      category: "frontend",
+      github: "https://github.com/Tusharjagi/file-explorer",
+      demo: "https://file-explorer-kohl-three.vercel.app/",
+      featured: true,
+      stats: { stars: 124, views: "2.1k" },
+    },
+    {
+      title: "World Time",
+      description:
+        "Built with Flutter, the World Time app allows users to search for a country or city and displays the current time for the selected location.",
+      image: "/images/world_time.png",
+      technologies: ["Flutter"],
       category: "mobile",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/Tusharjagi/Flutter_World_Time",
+      demo: "https://github.com/Tusharjagi/Flutter_World_Time",
       featured: false,
       stats: { stars: 156, views: "3.2k" },
     },
     {
-      title: "AI Chat Assistant",
+      title: "Portfolio (Old)",
       description:
-        "An intelligent chatbot powered by machine learning with natural language processing and context awareness.",
-      image:
-        "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Python", "TensorFlow", "FastAPI", "React", "Docker"],
-      category: "backend",
-      github: "#",
-      demo: "#",
-      featured: true,
+        "Built a responsive and SEO-friendly portfolio website using Next.js to highlight my work, technical skills, and contact information.",
+      image: "/images/web_developer.png",
+      technologies: ["Next.js", "MUI"],
+      category: "frontend",
+      github: "https://github.com/Tusharjagi/personal_website",
+      demo: "https://tushar-jagi.vercel.app/",
+      featured: false,
       stats: { stars: 203, views: "4.1k" },
     },
     {
-      title: "Blockchain Wallet",
+      title: "Travello",
       description:
-        "A secure cryptocurrency wallet with multi-chain support, transaction history, and portfolio tracking.",
-      image:
-        "https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Web3.js", "Solidity", "React", "Node.js", "MongoDB"],
-      category: "blockchain",
-      github: "#",
-      demo: "#",
+        "Built a basic travel booking app using Python, Django, PostgreSQL, and Django Templates, allowing users to explore destinations and make travel reservations.",
+      image: "/images/django.png",
+      technologies: ["Python", "Django", "Postgresql"],
+      category: "fullstack",
+      github: "https://github.com/Tusharjagi/Django_Project",
+      demo: "https://github.com/Tusharjagi/Django_Project",
       featured: false,
       stats: { stars: 78, views: "1.5k" },
+    },
+    {
+      title: "TODO",
+      description:
+        "Built a To-Do application using the MERN stack (MongoDB, Express.js, React, Node.js) that supports full CRUD functionality.",
+      image: "/images/todo.png",
+      technologies: ["React", "Redux", "MongoDB", "Node.js", "Express.js"],
+      category: "fullstack",
+      github: "https://github.com/Tusharjagi/Todo",
+      demo: "https://github.com/Tusharjagi/Todo",
+      featured: false,
+      stats: { stars: 48, views: "1.2k" },
     },
   ];
 
@@ -106,7 +106,6 @@ export default function Projects() {
     { id: "frontend", label: "Frontend" },
     { id: "backend", label: "Backend" },
     { id: "mobile", label: "Mobile" },
-    { id: "blockchain", label: "Blockchain" },
   ];
 
   const filteredProjects =
@@ -116,7 +115,6 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section-padding relative overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-purple-50/30 dark:from-gray-800/50 dark:via-gray-900 dark:to-gray-800/50" />
 
       <div className="container-center relative z-10">
@@ -294,7 +292,7 @@ export default function Projects() {
           transition={{ duration: 0.6, delay: 0.8 }}
         >
           <motion.a
-            href="#"
+            href="#projects"
             className="inline-flex items-center glass-card px-8 py-4 rounded-full font-medium text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
