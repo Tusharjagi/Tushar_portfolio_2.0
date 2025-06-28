@@ -31,12 +31,6 @@ A modern, responsive portfolio website showcasing Tushar Jagi's work as a Full S
 - **ESLint** - Code linting
 - **PostCSS** - CSS processing
 
-### Development Tools
-
-- **Cursor IDE** - AI-powered code editor
-- **Figma** - Design and prototyping
-- **GitHub Copilot** - AI code assistance
-
 ## 📁 Project Structure
 
 ```
