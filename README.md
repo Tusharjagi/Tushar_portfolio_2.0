@@ -174,13 +174,10 @@ theme: {
 
 ## 📧 Contact
 
-- **Email**: [Your Email]
+- **Email**: [tusharjagi@gmail.com]
 - **LinkedIn**: [https://www.linkedin.com/in/tushar-jagi-519025215/](https://www.linkedin.com/in/tushar-jagi-519025215/)
 - **GitHub**: [https://github.com/Tusharjagi](https://github.com/Tusharjagi)
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤝 Contributing
 
