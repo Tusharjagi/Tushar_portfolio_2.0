@@ -13,6 +13,54 @@ import {
   Clock,
 } from "lucide-react";
 
+const contactInfo = [
+  {
+    icon: Mail,
+    title: "Email",
+    value: "tusharjagi@gmail.com",
+    href: "mailto:tusharjagi@gmail.com",
+    color: "from-red-500 to-pink-500",
+  },
+  {
+    icon: Phone,
+    title: "Phone",
+    value: "+91 8285353051",
+    href: "tel:+918285353051",
+    color: "from-green-500 to-emerald-500",
+  },
+  {
+    icon: MapPin,
+    title: "Location",
+    value: "Delhi, india",
+    href: "#",
+    color: "from-blue-500 to-cyan-500",
+  },
+];
+
+const quickActions = [
+  {
+    icon: MessageCircle,
+    title: "Quick Chat",
+    description: "Schedule a 15-min call",
+    action: "Schedule Call",
+    color: "from-purple-500 to-indigo-500",
+  },
+  {
+    icon: Calendar,
+    title: "Project Discussion",
+    description: "Discuss your project needs",
+    action: "Book Meeting",
+    color: "from-orange-500 to-red-500",
+  },
+  {
+    icon: Clock,
+    title: "Consultation",
+    description: "Free 30-min consultation",
+    action: "Get Started",
+    color: "from-teal-500 to-green-500",
+  },
+];
+
 export default function Contact() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -48,54 +96,6 @@ export default function Contact() {
     setFormData({ name: "", email: "", subject: "", message: "" });
     setIsSubmitting(false);
   };
-
-  const contactInfo = [
-    {
-      icon: Mail,
-      title: "Email",
-      value: "tusharjagi@gmail.com",
-      href: "mailto:tusharjagi@gmail.com",
-      color: "from-red-500 to-pink-500",
-    },
-    {
-      icon: Phone,
-      title: "Phone",
-      value: "+91 8285353051",
-      href: "tel:+918285353051",
-      color: "from-green-500 to-emerald-500",
-    },
-    {
-      icon: MapPin,
-      title: "Location",
-      value: "Delhi, india",
-      href: "#",
-      color: "from-blue-500 to-cyan-500",
-    },
-  ];
-
-  const quickActions = [
-    {
-      icon: MessageCircle,
-      title: "Quick Chat",
-      description: "Schedule a 15-min call",
-      action: "Schedule Call",
-      color: "from-purple-500 to-indigo-500",
-    },
-    {
-      icon: Calendar,
-      title: "Project Discussion",
-      description: "Discuss your project needs",
-      action: "Book Meeting",
-      color: "from-orange-500 to-red-500",
-    },
-    {
-      icon: Clock,
-      title: "Consultation",
-      description: "Free 30-min consultation",
-      action: "Get Started",
-      color: "from-teal-500 to-green-500",
-    },
-  ];
 
   return (
     <section id="contact" className="section-padding relative overflow-hidden">
