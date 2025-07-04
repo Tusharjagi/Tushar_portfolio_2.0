@@ -12,6 +12,7 @@ import {
   Calendar,
   Clock,
 } from "lucide-react";
+import Popup from "./Popup";
 
 const contactInfo = [
   {
@@ -75,6 +76,15 @@ export default function Contact() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [popup, setPopup] = useState<{
+    show: boolean;
+    type: "success" | "error";
+    message: string;
+  }>({
+    show: false,
+    type: "success",
+    message: "",
+  });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -85,15 +95,23 @@ export default function Contact() {
     });
   };
 
+  const showPopup = (type: "success" | "error", message: string) => {
+    setPopup({ show: true, type, message });
+  };
+
+  const closePopup = () => {
+    setPopup({ show: false, type: "success", message: "" });
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
@@ -101,14 +119,20 @@ export default function Contact() {
       const data = await response.json();
 
       if (response.ok) {
-        alert("Thank you for your message! I'll get back to you soon.");
+        showPopup(
+          "success",
+          "Thank you for your message! I'll get back to you soon."
+        );
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        alert(`Error: ${data.error || 'Failed to send message. Please try again.'}`);
+        showPopup(
+          "error",
+          data.error || "Failed to send message. Please try again."
+        );
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('Failed to send message. Please try again.');
+      console.error("Error submitting form:", error);
+      showPopup("error", "Failed to send message. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -120,6 +144,14 @@ export default function Contact() {
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-purple-50/30 dark:from-gray-800/50 dark:via-gray-900 dark:to-gray-800/50" />
       <div className="absolute top-20 right-20 w-72 h-72 bg-gradient-to-r from-primary-400/10 to-purple-400/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-r from-pink-400/10 to-primary-400/10 rounded-full blur-3xl" />
+
+      {/* Popup Modal */}
+      <Popup
+        show={popup.show}
+        type={popup.type}
+        message={popup.message}
+        onClose={closePopup}
+      />
 
       <div className="container-center relative z-10">
         <motion.div
