@@ -288,13 +288,13 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex justify-center mb-12"
         >
-          <div className="glass-card p-2 rounded-2xl">
-            <div className="flex space-x-2">
+          <div className="glass-card p-2 rounded-2xl w-full max-w-4xl">
+            <div className="flex flex-wrap justify-center gap-2">
               {skillCategories.map((category, index) => (
                 <motion.button
                   key={category.title}
                   onClick={() => setActiveCategory(index)}
-                  className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 flex items-center space-x-2 ${
+                  className={`px-4 py-3 rounded-xl font-medium transition-all duration-300 flex items-center space-x-2 text-sm sm:text-base ${
                     activeCategory === index
                       ? "bg-gradient-to-r from-primary-600 to-purple-600 text-white shadow-lg"
                       : "text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"
@@ -302,8 +302,8 @@ export default function Skills() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <span className="text-lg">{category.icon}</span>
-                  <span>{category.title}</span>
+                  <span className="text-base sm:text-lg">{category.icon}</span>
+                  <span className="whitespace-nowrap">{category.title}</span>
                 </motion.button>
               ))}
             </div>

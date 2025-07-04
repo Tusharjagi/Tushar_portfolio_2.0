@@ -116,13 +116,15 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <span className="gradient-text font-semibold">
-                Full Stack Developer
-              </span>
-              <span className="mx-4">•</span>
-              <span className="gradient-text font-semibold">
-                Software Engineer
-              </span>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
+                <span className="gradient-text font-semibold text-center">
+                  Full Stack Developer
+                </span>
+                <span className="hidden sm:inline mx-4">•</span>
+                <span className="gradient-text font-semibold text-center">
+                  Software Engineer
+                </span>
+              </div>
             </motion.div>
 
             <motion.p
@@ -174,7 +176,7 @@ export default function Hero() {
             </motion.div>
 
             <motion.div
-              className="flex items-center justify-center gap-6 mb-16"
+              className="flex flex-wrap items-center justify-center gap-3 sm:gap-6 mb-16 px-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.2 }}
@@ -228,7 +230,7 @@ export default function Hero() {
                     key={label}
                     href={href}
                     target={target}
-                    className={`group relative p-4 glass-card text-gray-700 dark:text-gray-300 ${color} transition-all duration-300 magnetic`}
+                    className={`group relative p-3 sm:p-4 glass-card text-gray-700 dark:text-gray-300 ${color} transition-all duration-300 magnetic`}
                     whileHover={{ scale: 1.1, y: -5, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
                     aria-label={label}
@@ -236,12 +238,13 @@ export default function Hero() {
                     {iconSrc ? (
                       <img
                         src={iconSrc}
-                        width="24px"
-                        height="24px"
+                        width="20px"
+                        height="20px"
+                        className="sm:w-6 sm:h-6"
                         alt={`${label}-icon`}
                       />
                     ) : (
-                      <Icon size={20} />
+                      <Icon size={20} className="sm:w-5 sm:h-5" />
                     )}
                     <div className="absolute -inset-2 bg-gradient-to-r from-primary-500 to-purple-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur" />
                   </motion.a>
